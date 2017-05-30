@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.rajat_pc.androidblogapplication.SetupActivity">
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/default_image"
+        android:id="@+id/setupImageBtn"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/profile_photo"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_your_name"
+        android:textColorHint="#bdc3c7"
+        android:textColor="#2c3e50"
+        android:layout_below="@+id/setupImageBtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/setupNameField"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:text="@string/finish_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bt_buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/setupSubmitBtn" />
+
+</RelativeLayout>

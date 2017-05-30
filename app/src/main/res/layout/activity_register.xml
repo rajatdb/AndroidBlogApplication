@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.rajat_pc.androidblogapplication.RegisterActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:textColor="#2c3e50"
+        android:textColorHint="#bdc3c7"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nameField"
+        android:hint="@string/username" />
+
+    <Button
+        android:text="@string/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bt_buttons"
+        android:id="@+id/registerBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#bdc3c7"
+        android:layout_marginTop="10dp"
+        android:textColor="#2c3e50"
+        android:id="@+id/emailField"
+        android:hint="@string/email"
+        android:layout_below="@+id/nameField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColorHint="#bdc3c7"
+        android:layout_marginTop="10dp"
+        android:textColor="#2c3e50"
+        android:id="@+id/passwrdField"
+        android:hint="@string/password"
+        android:layout_below="@+id/emailField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

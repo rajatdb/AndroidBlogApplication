@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1055028711749",
+    "firebase_url": "https://blogapp-67da5.firebaseio.com",
+    "project_id": "blogapp-67da5",
+    "storage_bucket": "blogapp-67da5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055028711749:android:564da7d129e5ad38",
+        "android_client_info": {
+          "package_name": "com.example.rajat_pc.androidblogapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055028711749-144ji4hsognkrqdbmldsmg9kd12brupk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqnuZVFhhUluKmbw-ZgxNhbE_gyAj5KNg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

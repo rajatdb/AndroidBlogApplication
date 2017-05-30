@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.rajat_pc.androidblogapplication.PostActivity">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/image_button"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageSelect"
+        android:clickable="true"
+        android:background="@color/cardview_light_background"
+        android:adjustViewBounds="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageSelect"
+        android:background="@drawable/input_outline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/titleField"
+        android:hint="Post Title..."
+        android:textColor="#000000"
+        android:textColorHint="@color/grayColor"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/titleField"
+        android:layout_marginTop="20dp"
+        android:id="@+id/descField"
+        android:textColor="#000000"
+        android:hint="Post Description..."
+        android:textColorHint="@color/grayColor"
+        android:layout_marginRight="20dp"
+        android:layout_alignLeft="@+id/titleField"
+        android:layout_alignStart="@+id/titleField"
+        android:padding="15dp"
+        android:singleLine="true" />
+
+    <Button
+        android:text="Sumbit Post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bt_buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/submitBtn" />
+
+</RelativeLayout>

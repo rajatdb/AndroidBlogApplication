@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/singleBlogImage"
+                android:src="@mipmap/image_button"
+                android:scaleType="centerCrop"
+                android:cropToPadding="false"
+                android:contentDescription="@string/content_image"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contextClickable="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/singleBlogTitle"
+                android:layout_below="@id/singleBlogImage"
+                android:textColor="#7f8c8d"
+                android:text="@string/post_title"
+                android:padding="15dp"
+                android:background="#FFFFFF"
+                android:textStyle="normal|bold"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#7f8c8d"
+                android:id="@+id/singleBlogDesc"
+                android:layout_below="@id/singleBlogTitle"
+                android:textSize="16sp"
+                android:text="@string/post_desc"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:background="#FFFFFF"
+                android:paddingBottom="15dp" />
+
+    <Button
+        android:text="@string/remove_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_bt_buttons"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/singleRemoveBtn"
+        android:visibility="invisible" />
+
+</RelativeLayout>

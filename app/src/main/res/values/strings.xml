@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Android Blog Application</string>
+    <string name="add_post">Add Post</string>
+    <string name="setting">Setting</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="finish_setup">Finish Setup</string>
+    <string name="enter_your_name">Enter Your Display Name...</string>
+    <string name="username">Your Name...</string>
+    <string name="password">Password...</string>
+    <string name="email">Email ...</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="post_username">username</string>
+    <string name="post_desc">The Post Description Goes Here</string>
+    <string name="post_title">Post Title Goes Here</string>
+    <string name="logout">Log Out</string>
+    <string name="content_image">Image Button</string>
+    <string name="remove_post">Remove Post</string>
+</resources>

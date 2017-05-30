@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_image"
+            android:src="@mipmap/image_button"
+            android:scaleType="centerCrop"
+            android:cropToPadding="false"
+            android:contentDescription="@string/content_image"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contextClickable="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_title"
+            android:textColor="#7f8c8d"
+            android:text="@string/post_title"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7f8c8d"
+            android:id="@+id/post_desc"
+            android:textSize="16sp"
+            android:text="@string/post_desc"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7f8c8d"
+            android:id="@+id/post_username"
+            android:textSize="12sp"
+            android:text="@string/post_username"
+            android:textStyle="bold"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/thumb_graybtn"
+                android:background="@android:color/transparent"
+                android:id="@+id/post_like"
+                android:layout_margin="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
