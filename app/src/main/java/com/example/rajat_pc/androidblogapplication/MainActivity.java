@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabaseUsers;
 
-//    private DatabaseReference mDatabaseCurrentUser;
-//
-//    private Query mQueryCurrentUser;
+    private DatabaseReference mDatabaseCurrentUser;
+
+    private Query mQueryCurrentUser;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -70,10 +70,10 @@ public class MainActivity extends AppCompatActivity {
         mDatabaseUsers = FirebaseDatabase.getInstance().getReference().child("Users");
         mDatabaseLike = FirebaseDatabase.getInstance().getReference().child("Likes");
 
-//        String currentUserId = mAuth.getCurrentUser().getUid();
-//
-//        mDatabaseCurrentUser = FirebaseDatabase.getInstance().getReference().child("Blog");
-//        mQueryCurrentUser = mDatabaseCurrentUser.orderByChild("uid").equalTo(currentUserId);
+        String currentUserId = mAuth.getCurrentUser().getUid();
+
+        mDatabaseCurrentUser = FirebaseDatabase.getInstance().getReference().child("Blog");
+        mQueryCurrentUser = mDatabaseCurrentUser.orderByChild("uid").equalTo(currentUserId);
 
         mDatabase.keepSynced(true);
         mDatabaseUsers.keepSynced(true);
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 Blog.class,
                 R.layout.blog_row,
                 BlogViewHolder.class,
-                mDatabase
+                mQueryCurrentUser
         ) {
             @Override
             protected void populateViewHolder(BlogViewHolder viewHolder, Blog model, int position) {
