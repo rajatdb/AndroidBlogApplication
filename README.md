@@ -1,10 +1,10 @@
 # Overview
 
-It's a Simple Blog Android Application using Firebase in which you can post the combine blog that is image, title and Description.
+It's a Simple Blog Android Application using Firebase in which user can post the combine blog that is image, title and Description.
 
 # SignIn and SignUp Display
 
-<img src="https://github.com/rajatdb/AndroidBlogApplication/blob/master/Screenshot_20170530_194501.png" alt="Screenshot1" width="250" height="460"> <img src="https://github.com/rajatdb/AndroidBlogApplication/blob/master/Screenshot_20170530_194649.png" alt="Screenshot2" width="250" height="460"> <img src="https://github.com/rajatdb/AndroidBlogApplication/blob/master/Screenshot_20170530_195637.png" alt="Screenshot3" width="250" height="460"> 
+<img src="https://github.com/rajatdb/AndroidBlogApplication/blob/master/Screenshot_20170530_194501.png" alt="Screenshot1" width="240" height="450"> <img src="https://github.com/rajatdb/AndroidBlogApplication/blob/master/Screenshot_20170530_194649.png" alt="Screenshot2" width="240" height="450"> <img src="https://github.com/rajatdb/AndroidBlogApplication/blob/master/Screenshot_20170530_195637.png" alt="Screenshot3" width="240" height="450"> 
 
 # BlogPost Display
 
